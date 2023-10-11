@@ -1,0 +1,131 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/gustavanderson/Downloads/Kreddit/Kreddit.api/Kreddit.api.csproj": {}
+  },
+  "projects": {
+    "/Users/gustavanderson/Downloads/Kreddit/Kreddit.api/Kreddit.api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/gustavanderson/Downloads/Kreddit/Kreddit.api/Kreddit.api.csproj",
+        "projectName": "Kreddit.api",
+        "projectPath": "/Users/gustavanderson/Downloads/Kreddit/Kreddit.api/Kreddit.api.csproj",
+        "packagesPath": "/Users/gustavanderson/.nuget/packages/",
+        "outputPath": "/Users/gustavanderson/Downloads/Kreddit/Kreddit.api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/gustavanderson/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/gustavanderson/Downloads/Kreddit/Kreddit.shared/Kreddit.shared.csproj": {
+                "projectPath": "/Users/gustavanderson/Downloads/Kreddit/Kreddit.shared/Kreddit.shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/gustavanderson/Downloads/Kreddit/Kreddit.shared/Kreddit.shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/gustavanderson/Downloads/Kreddit/Kreddit.shared/Kreddit.shared.csproj",
+        "projectName": "Kreddit.shared",
+        "projectPath": "/Users/gustavanderson/Downloads/Kreddit/Kreddit.shared/Kreddit.shared.csproj",
+        "packagesPath": "/Users/gustavanderson/.nuget/packages/",
+        "outputPath": "/Users/gustavanderson/Downloads/Kreddit/Kreddit.shared/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/gustavanderson/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

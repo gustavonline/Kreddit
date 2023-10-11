@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kreddit.api", "Kreddit.api\Kreddit.api.csproj", "{0595EA70-A45F-4342-9449-FE21191346A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kreddit.client", "Kreddit.client\Kreddit.client.csproj", "{5A51EAD8-E236-4F3A-8E2F-B1B94777EC18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kreddit.shared", "Kreddit.shared\Kreddit.shared.csproj", "{2415DE73-843C-4B0D-BD5F-976BCADEB4E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0595EA70-A45F-4342-9449-FE21191346A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0595EA70-A45F-4342-9449-FE21191346A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0595EA70-A45F-4342-9449-FE21191346A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0595EA70-A45F-4342-9449-FE21191346A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A51EAD8-E236-4F3A-8E2F-B1B94777EC18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A51EAD8-E236-4F3A-8E2F-B1B94777EC18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A51EAD8-E236-4F3A-8E2F-B1B94777EC18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A51EAD8-E236-4F3A-8E2F-B1B94777EC18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2415DE73-843C-4B0D-BD5F-976BCADEB4E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2415DE73-843C-4B0D-BD5F-976BCADEB4E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2415DE73-843C-4B0D-BD5F-976BCADEB4E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2415DE73-843C-4B0D-BD5F-976BCADEB4E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

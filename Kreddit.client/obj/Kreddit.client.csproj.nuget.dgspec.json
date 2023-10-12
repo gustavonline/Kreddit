@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/gustavanderson/Library/CloudStorage/GoogleDrive-gustavbroegger@icloud.com/My Drive/IT-Architecture/AppUdvikling/Kreddit/Kreddit.client/Kreddit.client.csproj": {}
+    "/Users/gustavanderson/Downloads/Kreddit/Kreddit.client/Kreddit.client.csproj": {}
   },
   "projects": {
-    "/Users/gustavanderson/Library/CloudStorage/GoogleDrive-gustavbroegger@icloud.com/My Drive/IT-Architecture/AppUdvikling/Kreddit/Kreddit.client/Kreddit.client.csproj": {
+    "/Users/gustavanderson/Downloads/Kreddit/Kreddit.client/Kreddit.client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gustavanderson/Library/CloudStorage/GoogleDrive-gustavbroegger@icloud.com/My Drive/IT-Architecture/AppUdvikling/Kreddit/Kreddit.client/Kreddit.client.csproj",
+        "projectUniqueName": "/Users/gustavanderson/Downloads/Kreddit/Kreddit.client/Kreddit.client.csproj",
         "projectName": "Kreddit.client",
-        "projectPath": "/Users/gustavanderson/Library/CloudStorage/GoogleDrive-gustavbroegger@icloud.com/My Drive/IT-Architecture/AppUdvikling/Kreddit/Kreddit.client/Kreddit.client.csproj",
+        "projectPath": "/Users/gustavanderson/Downloads/Kreddit/Kreddit.client/Kreddit.client.csproj",
         "packagesPath": "/Users/gustavanderson/.nuget/packages/",
-        "outputPath": "/Users/gustavanderson/Library/CloudStorage/GoogleDrive-gustavbroegger@icloud.com/My Drive/IT-Architecture/AppUdvikling/Kreddit/Kreddit.client/obj/",
+        "outputPath": "/Users/gustavanderson/Downloads/Kreddit/Kreddit.client/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/gustavanderson/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/gustavanderson/Library/CloudStorage/GoogleDrive-gustavbroegger@icloud.com/My Drive/IT-Architecture/AppUdvikling/Kreddit/Kreddit.shared/Kreddit.shared.csproj": {
-                "projectPath": "/Users/gustavanderson/Library/CloudStorage/GoogleDrive-gustavbroegger@icloud.com/My Drive/IT-Architecture/AppUdvikling/Kreddit/Kreddit.shared/Kreddit.shared.csproj"
+              "/Users/gustavanderson/Downloads/Kreddit/Kreddit.shared/Kreddit.shared.csproj": {
+                "projectPath": "/Users/gustavanderson/Downloads/Kreddit/Kreddit.shared/Kreddit.shared.csproj"
               }
             }
           }
@@ -42,6 +42,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[7.0.10, )"
@@ -50,6 +54,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.12, )"
             }
           },
           "imports": [
@@ -83,14 +91,14 @@
         }
       }
     },
-    "/Users/gustavanderson/Library/CloudStorage/GoogleDrive-gustavbroegger@icloud.com/My Drive/IT-Architecture/AppUdvikling/Kreddit/Kreddit.shared/Kreddit.shared.csproj": {
+    "/Users/gustavanderson/Downloads/Kreddit/Kreddit.shared/Kreddit.shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gustavanderson/Library/CloudStorage/GoogleDrive-gustavbroegger@icloud.com/My Drive/IT-Architecture/AppUdvikling/Kreddit/Kreddit.shared/Kreddit.shared.csproj",
+        "projectUniqueName": "/Users/gustavanderson/Downloads/Kreddit/Kreddit.shared/Kreddit.shared.csproj",
         "projectName": "Kreddit.shared",
-        "projectPath": "/Users/gustavanderson/Library/CloudStorage/GoogleDrive-gustavbroegger@icloud.com/My Drive/IT-Architecture/AppUdvikling/Kreddit/Kreddit.shared/Kreddit.shared.csproj",
+        "projectPath": "/Users/gustavanderson/Downloads/Kreddit/Kreddit.shared/Kreddit.shared.csproj",
         "packagesPath": "/Users/gustavanderson/.nuget/packages/",
-        "outputPath": "/Users/gustavanderson/Library/CloudStorage/GoogleDrive-gustavbroegger@icloud.com/My Drive/IT-Architecture/AppUdvikling/Kreddit/Kreddit.shared/obj/",
+        "outputPath": "/Users/gustavanderson/Downloads/Kreddit/Kreddit.shared/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/gustavanderson/.nuget/NuGet/NuGet.Config"
@@ -116,6 +124,16 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

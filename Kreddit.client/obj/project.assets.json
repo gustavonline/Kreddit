@@ -1827,19 +1827,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/markelgaard/.nuget/packages/": {}
+    "/Users/gustavanderson/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/markelgaard/RiderProjects/Kreddit/Kreddit.client/Kreddit.client.csproj",
+      "projectUniqueName": "/Users/gustavanderson/Library/CloudStorage/GoogleDrive-gustavbroegger@icloud.com/My Drive/IT-Architecture/AppUdvikling/Kreddit/Kreddit.client/Kreddit.client.csproj",
       "projectName": "Kreddit.client",
-      "projectPath": "/Users/markelgaard/RiderProjects/Kreddit/Kreddit.client/Kreddit.client.csproj",
-      "packagesPath": "/Users/markelgaard/.nuget/packages/",
-      "outputPath": "/Users/markelgaard/RiderProjects/Kreddit/Kreddit.client/obj/",
+      "projectPath": "/Users/gustavanderson/Library/CloudStorage/GoogleDrive-gustavbroegger@icloud.com/My Drive/IT-Architecture/AppUdvikling/Kreddit/Kreddit.client/Kreddit.client.csproj",
+      "packagesPath": "/Users/gustavanderson/.nuget/packages/",
+      "outputPath": "/Users/gustavanderson/Library/CloudStorage/GoogleDrive-gustavbroegger@icloud.com/My Drive/IT-Architecture/AppUdvikling/Kreddit/Kreddit.client/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/markelgaard/.nuget/NuGet/NuGet.Config"
+        "/Users/gustavanderson/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -1851,8 +1851,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/markelgaard/RiderProjects/Kreddit/Kreddit.shared/Kreddit.shared.csproj": {
-              "projectPath": "/Users/markelgaard/RiderProjects/Kreddit/Kreddit.shared/Kreddit.shared.csproj"
+            "/Users/gustavanderson/Library/CloudStorage/GoogleDrive-gustavbroegger@icloud.com/My Drive/IT-Architecture/AppUdvikling/Kreddit/Kreddit.shared/Kreddit.shared.csproj": {
+              "projectPath": "/Users/gustavanderson/Library/CloudStorage/GoogleDrive-gustavbroegger@icloud.com/My Drive/IT-Architecture/AppUdvikling/Kreddit/Kreddit.shared/Kreddit.shared.csproj"
             }
           }
         }

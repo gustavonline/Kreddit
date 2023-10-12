@@ -10,11 +10,11 @@ public class Post
     
     public User User { get; set; } = null!;
     
-    Public list<Comment> Comments { get; set; } = null!;
+    public List<Comment> Comments { get; set; } = null!;
     
-    Public int Upvotes { get; set; }
+    public int Upvotes { get; set; }
     
-    Public int Downvotes { get; set; }
+    public int Downvotes { get; set; }
     
     public DateOnly CreatedAt { get; set; }
 }

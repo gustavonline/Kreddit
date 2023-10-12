@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/markelgaard/RiderProjects/Kreddit/Kreddit.shared/Kreddit.shared.csproj": {}
+    "/Users/gustavanderson/Library/CloudStorage/GoogleDrive-gustavbroegger@icloud.com/My Drive/IT-Architecture/AppUdvikling/Kreddit/Kreddit.shared/Kreddit.shared.csproj": {}
   },
   "projects": {
-    "/Users/markelgaard/RiderProjects/Kreddit/Kreddit.shared/Kreddit.shared.csproj": {
+    "/Users/gustavanderson/Library/CloudStorage/GoogleDrive-gustavbroegger@icloud.com/My Drive/IT-Architecture/AppUdvikling/Kreddit/Kreddit.shared/Kreddit.shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/markelgaard/RiderProjects/Kreddit/Kreddit.shared/Kreddit.shared.csproj",
+        "projectUniqueName": "/Users/gustavanderson/Library/CloudStorage/GoogleDrive-gustavbroegger@icloud.com/My Drive/IT-Architecture/AppUdvikling/Kreddit/Kreddit.shared/Kreddit.shared.csproj",
         "projectName": "Kreddit.shared",
-        "projectPath": "/Users/markelgaard/RiderProjects/Kreddit/Kreddit.shared/Kreddit.shared.csproj",
-        "packagesPath": "/Users/markelgaard/.nuget/packages/",
-        "outputPath": "/Users/markelgaard/RiderProjects/Kreddit/Kreddit.shared/obj/",
+        "projectPath": "/Users/gustavanderson/Library/CloudStorage/GoogleDrive-gustavbroegger@icloud.com/My Drive/IT-Architecture/AppUdvikling/Kreddit/Kreddit.shared/Kreddit.shared.csproj",
+        "packagesPath": "/Users/gustavanderson/.nuget/packages/",
+        "outputPath": "/Users/gustavanderson/Library/CloudStorage/GoogleDrive-gustavbroegger@icloud.com/My Drive/IT-Architecture/AppUdvikling/Kreddit/Kreddit.shared/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/markelgaard/.nuget/NuGet/NuGet.Config"
+          "/Users/gustavanderson/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"

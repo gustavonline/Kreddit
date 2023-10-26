@@ -8,6 +8,8 @@ public class Comment
     
     public User User { get; set; }
     
+    public int PostId { get; set; }
+    
     public int Upvotes { get; set; }
     
     public int Downvotes { get; set; }

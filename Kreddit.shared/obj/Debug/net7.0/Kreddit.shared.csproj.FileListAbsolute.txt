@@ -9,3 +9,14 @@
 /Users/gustavanderson/Downloads/Kreddit/Kreddit.shared/obj/Debug/net7.0/refint/Kreddit.shared.dll
 /Users/gustavanderson/Downloads/Kreddit/Kreddit.shared/obj/Debug/net7.0/Kreddit.shared.pdb
 /Users/gustavanderson/Downloads/Kreddit/Kreddit.shared/obj/Debug/net7.0/ref/Kreddit.shared.dll
+/Users/markelgaard/RiderProjects/Kreddit/Kreddit.shared/bin/Debug/net7.0/Kreddit.shared.deps.json
+/Users/markelgaard/RiderProjects/Kreddit/Kreddit.shared/bin/Debug/net7.0/Kreddit.shared.dll
+/Users/markelgaard/RiderProjects/Kreddit/Kreddit.shared/bin/Debug/net7.0/Kreddit.shared.pdb
+/Users/markelgaard/RiderProjects/Kreddit/Kreddit.shared/obj/Debug/net7.0/Kreddit.shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/markelgaard/RiderProjects/Kreddit/Kreddit.shared/obj/Debug/net7.0/Kreddit.shared.AssemblyInfoInputs.cache
+/Users/markelgaard/RiderProjects/Kreddit/Kreddit.shared/obj/Debug/net7.0/Kreddit.shared.AssemblyInfo.cs
+/Users/markelgaard/RiderProjects/Kreddit/Kreddit.shared/obj/Debug/net7.0/Kreddit.shared.csproj.CoreCompileInputs.cache
+/Users/markelgaard/RiderProjects/Kreddit/Kreddit.shared/obj/Debug/net7.0/Kreddit.shared.dll
+/Users/markelgaard/RiderProjects/Kreddit/Kreddit.shared/obj/Debug/net7.0/refint/Kreddit.shared.dll
+/Users/markelgaard/RiderProjects/Kreddit/Kreddit.shared/obj/Debug/net7.0/Kreddit.shared.pdb
+/Users/markelgaard/RiderProjects/Kreddit/Kreddit.shared/obj/Debug/net7.0/ref/Kreddit.shared.dll

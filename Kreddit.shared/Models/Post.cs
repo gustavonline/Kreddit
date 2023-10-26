@@ -25,4 +25,13 @@ public class Post
         Downvotes = downvotes;
         User = user;
     }
+    
+    public Post() {
+        Id = 0;
+        Title = "";
+        Content = "";
+        Upvotes = 0;
+        Downvotes = 0;
+        Comments = new List<Comment>();
+    }
 }

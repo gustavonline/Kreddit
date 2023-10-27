@@ -6,7 +6,7 @@ public class Comment
     
     public string Title { get; set; }
     
-    public User User { get; set; }
+    public User User{ get; set; }
     
     public int PostId { get; set; }
     
@@ -14,11 +14,12 @@ public class Comment
     
     public int Downvotes { get; set; }
     
+    
     public DateOnly Date { get; set; }
     
-    public Comment(string title = "", int upvotes = 0, int downvotes = 0, User user = null)
+    public Comment(string content = "", int upvotes = 0, int downvotes = 0, User user = null)
     {
-        Title = title;
+        Title = Title;
         Upvotes = upvotes;
         Downvotes = downvotes;
         User = user;

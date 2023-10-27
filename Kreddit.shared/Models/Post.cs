@@ -10,14 +10,14 @@ public class Post
     
     public User User { get; set; }
     
-    public List<Comment> Comments { get; set; }
+    public List<Comment> Comments { get; set; } = new List<Comment>();
     
     public int Upvotes { get; set; }
     
     public int Downvotes { get; set; }
     
     public DateOnly CreatedAt { get; set; }
-    
+
     public Post(User user, string title = "", string content = "", int upvotes = 0, int downvotes = 0) {
         Title = title;
         Content = content;
@@ -32,6 +32,6 @@ public class Post
         Content = "";
         Upvotes = 0;
         Downvotes = 0;
-        Comments = new List<Comment>();
+        User = null;
     }
 }

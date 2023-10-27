@@ -1,11 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Kreddit.api.Data;
 using Kreddit.shared.Models;
 
 namespace Kreddit.api.Controllers
 {
-    [Route("api")]
+    [Route("api/posts/{postId}/comments")]
     [ApiController]
     public class CommentController : ControllerBase
     {
@@ -15,26 +14,29 @@ namespace Kreddit.api.Controllers
         {
             _context = context;
         }
-
-
+        
 
       
         // POST: api/posts/{postId}/comments
-        [HttpPost ("posts/{postId}/comments")]
+        [HttpPost]
         public async Task<ActionResult<Comment>> CreateComment(int postId, Comment comment)
         {
+            var post = await _context.Posts.FindAsync(postId);
+            if (post == null)
+            {
+                return NotFound($"Post with ID {postId} not found.");
+            }
 
-            // Remove post lookup  
+            if (string.IsNullOrWhiteSpace(comment.Title)) 
+            {
+                return BadRequest("Comment title should not be empty or whitespace.");
+            }
 
-            // Add comment 
+            comment.PostId = postId;
             _context.Comments.Add(comment);
-
-            // Save changes
             await _context.SaveChangesAsync();
 
-            return Ok(comment);
-
+            return CreatedAtAction(nameof(CreateComment), new { postId = postId, id = comment.Id }, comment);
         }
-
     }
 }

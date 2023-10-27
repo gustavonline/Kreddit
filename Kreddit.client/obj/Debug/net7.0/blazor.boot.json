@@ -201,14 +201,14 @@
       "netstandard.dll": "sha256-qjqaAEP3hdLnU\/TnoCd8HaSa+0ruV1TpdaB2GUujGMw=",
       "System.Private.CoreLib.dll": "sha256-\/7uQ+eNo9u3H1mpgMko4D3tKZHeGRfsRjna0Dqsu62k=",
       "Kreddit.shared.dll": "sha256-spsfMGw74FB8\/uPUYSH05+HGJILHafKymTwuLPmrJYk=",
-      "Kreddit.client.dll": "sha256-hrSKYo9PtSRavFADf\/0BBTB95H2U2Z+tODJTsjCZgG4="
+      "Kreddit.client.dll": "sha256-H6cnfzv1TmQsAco7BAgC\/3ENaXL2q2wKuvj+yG5MwGg="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "Kreddit.shared.pdb": "sha256-M+GnPnQD0DltgtuW\/yPxJjVwJCCu3B+NuNEXlOkTbmo=",
-      "Kreddit.client.pdb": "sha256-XKmiC9YtXxg+QbcUw+87RPCiCkh4DlgomJ6anPQVZdg="
+      "Kreddit.client.pdb": "sha256-\/Nfo04fOOioNS7Ymtl+ZKl0s6Bk9jBxhn4pe7Rwq+6c="
     },
     "runtime": {
       "dotnet.7.0.10.fko36mawz4.js": "sha256-qJB30QURoyH3y3WyayHu6nMFIx2XNOkXCez7tagGpvE=",

@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Kreddit.shared
-build_property.ProjectDir = /Users/gustavanderson/Downloads/Kreddit/Kreddit.shared/
+build_property.ProjectDir = /Users/markelgaard/RiderProjects/Kreddit/Kreddit.shared/

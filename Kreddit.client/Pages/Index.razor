@@ -1,9 +1,23 @@
 ﻿@page "/"
+@using Kreddit.shared.Models
+@using System.Net.Http.Json
 
-<PageTitle>Index</PageTitle>
 
-<h1>Hello, world!</h1>
+<PageTitle>Kreddit</PageTitle>
 
-Welcome to your new app.
+<h1>Welcome to Kreddit</h1>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+<p>Below you can read the most recent posts.</p>
+
+<PostList></PostList>
+
+<h3>Notes about this app:</h3>
+<ul>
+    <li>You need to reload browser to reload data.</li>
+    <li>Dates are not implemented.</li>
+    <li>Only upvote on posts work. No other voting works yet.</li>
+    <li>Cannot create new posts, only new comments.</li>
+    <li>No user selection. User is hardcoded (Mads).</li>
+</ul>
+
+

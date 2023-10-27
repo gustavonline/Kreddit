@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RqovF1E/E76CwgQnQFPQw8UvHNbTtuEawRaG8OYK+GI=",
+  "Hash": "Vmf8aPoKXu/Vc9kyg8fviKdc+iOuxEijG7M3cf/e6q0=",
   "Source": "Kreddit.client",
   "BasePath": "/",
   "Mode": "Root",
@@ -6968,6 +6968,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/markelgaard/RiderProjects/Kreddit/Kreddit.client/obj/Debug/net7.0/scopedcss/projectbundle/Kreddit.client.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/markelgaard/RiderProjects/Kreddit/Kreddit.client/wwwroot/appsettings.json",
+      "SourceId": "Kreddit.client",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/markelgaard/RiderProjects/Kreddit/Kreddit.client/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "appsettings.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "settings",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/appsettings.json"
     },
     {
       "Identity": "/Users/markelgaard/RiderProjects/Kreddit/Kreddit.client/wwwroot/css/app.css",

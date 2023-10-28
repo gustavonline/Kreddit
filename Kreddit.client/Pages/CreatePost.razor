@@ -1,0 +1,33 @@
+@page "/CreatePost"
+@using Kreddit.shared.Models
+@using Kreddit.client.Services
+
+@inject PostService PostService
+
+@inject HttpClient Http
+<h3>CreatePost</h3>
+
+<EditForm Model="_post" OnValidSubmit="HandleSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <InputText @bind-Value="_post.Title" placeholder="Title" />
+    <br />
+    <InputTextArea @bind-Value="_post.Content" placeholder="Content" />
+    <br />
+    <InputText @bind-Value="_post.User.Username" placeholder="Username" />
+    <br />
+
+    <button type="submit">Create Post</button>
+</EditForm>
+
+@code {
+
+    private Post _post = new Post();
+    
+    private async Task HandleSubmit()
+    {
+        var createpost= await PostService.CreatePost(_post);
+       
+    }
+}

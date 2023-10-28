@@ -1,11 +1,16 @@
 ﻿@page "/"
 @using Kreddit.client.Components
+@using NavigationManager = Microsoft.AspNetCore.Components.NavigationManager
+@inject NavigationManager NavigationManager
+
 
 <PageTitle>Kreddit</PageTitle>
 
 <h1>Welcome to Kreddit</h1>
 
 <p>Below you can read the most recent posts.</p>
+
+<button @onclick="() => NavigateToCreatePost()">Create post</button>
 
 <PostList></PostList>
 
@@ -18,4 +23,11 @@
     <li>No user selection. User is hardcoded (Mads).</li>
 </ul>
 
+@code {
+    private Task NavigateToCreatePost()
+    {
+        NavigationManager.NavigateTo("/createpost");
+        return Task.CompletedTask;
+    }
 
+}

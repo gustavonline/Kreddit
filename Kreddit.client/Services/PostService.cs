@@ -86,4 +86,17 @@ public class PostService
         // Return the updated post (vote increased)
         return updatedPost;
     }
+    
+    // Create post
+    public async Task<Post> CreatePost(Post post)
+    {
+        string url = $"{baseAPI}posts/create-post/";
+        HttpResponseMessage msg = await http.PostAsJsonAsync(url, post);
+        string json = msg.Content.ReadAsStringAsync().Result;
+        Post? newPost = JsonSerializer.Deserialize<Post>(json, new JsonSerializerOptions {
+            PropertyNameCaseInsensitive = true
+        });
+        return newPost;
+    }
+    
 }

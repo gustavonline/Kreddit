@@ -15,5 +15,12 @@ public class DataContext : DbContext
     public DbSet<Post> Posts => Set<Post>();
     public DbSet<Comment> Comments => Set<Comment>();
     
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Post>()
+            .HasOne(p => p.User)
+            .WithMany() // Assuming one user can have many posts
+            .HasForeignKey(p => p.UserId);
+    }
     
 }

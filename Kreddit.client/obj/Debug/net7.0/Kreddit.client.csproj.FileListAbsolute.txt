@@ -1662,3 +1662,11 @@
 /Users/markelgaard/RiderProjects/Kreddit/Kreddit.client/obj/Debug/net7.0/refint/Kreddit.client.dll
 /Users/markelgaard/RiderProjects/Kreddit/Kreddit.client/obj/Debug/net7.0/Kreddit.client.pdb
 /Users/markelgaard/RiderProjects/Kreddit/Kreddit.client/obj/Debug/net7.0/ref/Kreddit.client.dll
+/Users/gustavanderson/Downloads/Kreddit/Kreddit.client/bin/Debug/net7.0/wwwroot/_framework/Kreddit.shared.dll
+/Users/gustavanderson/Downloads/Kreddit/Kreddit.client/bin/Debug/net7.0/wwwroot/_framework/Kreddit.shared.pdb
+/Users/gustavanderson/Downloads/Kreddit/Kreddit.client/bin/Debug/net7.0/wwwroot/_framework/Kreddit.shared.pdb.gz
+/Users/gustavanderson/Downloads/Kreddit/Kreddit.client/bin/Debug/net7.0/wwwroot/_framework/Kreddit.shared.dll.gz
+/Users/gustavanderson/Downloads/Kreddit/Kreddit.client/bin/Debug/net7.0/Kreddit.shared.dll
+/Users/gustavanderson/Downloads/Kreddit/Kreddit.client/bin/Debug/net7.0/Kreddit.shared.pdb
+/Users/gustavanderson/Downloads/Kreddit/Kreddit.client/obj/Debug/net7.0/build-gz/uIVgX4YV.gz
+/Users/gustavanderson/Downloads/Kreddit/Kreddit.client/obj/Debug/net7.0/build-gz/d8l7QXKu.gz

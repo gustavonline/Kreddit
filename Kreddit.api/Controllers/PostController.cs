@@ -22,14 +22,18 @@ public class PostController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<List<Post>>> GetAllPosts()
     {
-        return Ok(await _context.Posts.ToListAsync());
+        // Include the user
+        var posts = await _context.Posts.Include(p => p.User).ToListAsync();
+        return Ok(posts);
     }
     
     // GET api/post/{id}
     [HttpGet ("{id}")]
     public async Task<ActionResult<Post>> GetPostById(int id)
     {
-        var post = await _context.Posts.FindAsync(id);
+        // Include the user while fetching the post by its ID
+        var post = await _context.Posts.Include(p => p.User).SingleOrDefaultAsync(p => p.Id == id);
+    
         if (post == null)
         {
             return NotFound($"Post with ID {id} not found.");

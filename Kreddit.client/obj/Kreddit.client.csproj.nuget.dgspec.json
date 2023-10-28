@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/markelgaard/RiderProjects/Kreddit/Kreddit.client/Kreddit.client.csproj": {}
+    "/Users/gustavanderson/Downloads/Kreddit/Kreddit.client/Kreddit.client.csproj": {}
   },
   "projects": {
-    "/Users/markelgaard/RiderProjects/Kreddit/Kreddit.client/Kreddit.client.csproj": {
+    "/Users/gustavanderson/Downloads/Kreddit/Kreddit.client/Kreddit.client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/markelgaard/RiderProjects/Kreddit/Kreddit.client/Kreddit.client.csproj",
+        "projectUniqueName": "/Users/gustavanderson/Downloads/Kreddit/Kreddit.client/Kreddit.client.csproj",
         "projectName": "Kreddit.client",
-        "projectPath": "/Users/markelgaard/RiderProjects/Kreddit/Kreddit.client/Kreddit.client.csproj",
-        "packagesPath": "/Users/markelgaard/.nuget/packages/",
-        "outputPath": "/Users/markelgaard/RiderProjects/Kreddit/Kreddit.client/obj/",
+        "projectPath": "/Users/gustavanderson/Downloads/Kreddit/Kreddit.client/Kreddit.client.csproj",
+        "packagesPath": "/Users/gustavanderson/.nuget/packages/",
+        "outputPath": "/Users/gustavanderson/Downloads/Kreddit/Kreddit.client/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/markelgaard/.nuget/NuGet/NuGet.Config"
+          "/Users/gustavanderson/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/markelgaard/RiderProjects/Kreddit/Kreddit.shared/Kreddit.shared.csproj": {
-                "projectPath": "/Users/markelgaard/RiderProjects/Kreddit/Kreddit.shared/Kreddit.shared.csproj"
+              "/Users/gustavanderson/Downloads/Kreddit/Kreddit.shared/Kreddit.shared.csproj": {
+                "projectPath": "/Users/gustavanderson/Downloads/Kreddit/Kreddit.shared/Kreddit.shared.csproj"
               }
             }
           }
@@ -83,17 +83,17 @@
         }
       }
     },
-    "/Users/markelgaard/RiderProjects/Kreddit/Kreddit.shared/Kreddit.shared.csproj": {
+    "/Users/gustavanderson/Downloads/Kreddit/Kreddit.shared/Kreddit.shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/markelgaard/RiderProjects/Kreddit/Kreddit.shared/Kreddit.shared.csproj",
+        "projectUniqueName": "/Users/gustavanderson/Downloads/Kreddit/Kreddit.shared/Kreddit.shared.csproj",
         "projectName": "Kreddit.shared",
-        "projectPath": "/Users/markelgaard/RiderProjects/Kreddit/Kreddit.shared/Kreddit.shared.csproj",
-        "packagesPath": "/Users/markelgaard/.nuget/packages/",
-        "outputPath": "/Users/markelgaard/RiderProjects/Kreddit/Kreddit.shared/obj/",
+        "projectPath": "/Users/gustavanderson/Downloads/Kreddit/Kreddit.shared/Kreddit.shared.csproj",
+        "packagesPath": "/Users/gustavanderson/.nuget/packages/",
+        "outputPath": "/Users/gustavanderson/Downloads/Kreddit/Kreddit.shared/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/markelgaard/.nuget/NuGet/NuGet.Config"
+          "/Users/gustavanderson/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"

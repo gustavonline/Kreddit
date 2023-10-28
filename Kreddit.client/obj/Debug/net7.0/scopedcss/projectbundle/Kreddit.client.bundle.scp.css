@@ -1,3 +1,198 @@
+/* /Components/PostList.razor.rz.scp.css */
+.loading-text[b-95fgh0b7kg] {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #777;
+}
+
+.post-table[b-95fgh0b7kg] {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.post-table th[b-95fgh0b7kg], .post-table td[b-95fgh0b7kg] {
+    border: 1px solid #e0e0e0;
+    padding: 8px 15px;
+    text-align: left;
+}
+
+.post-table th[b-95fgh0b7kg] {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.post-link[b-95fgh0b7kg] {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.post-link:hover[b-95fgh0b7kg] {
+    text-decoration: underline;
+}
+
+.vote-btn[b-95fgh0b7kg] {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upvote-btn[b-95fgh0b7kg] {
+    background-color: #28a745;
+    color: white;
+}
+
+.upvote-btn:hover[b-95fgh0b7kg] {
+    background-color: #218838;
+}
+
+.downvote-btn[b-95fgh0b7kg] {
+    background-color: #dc3545;
+    color: white;
+}
+
+.downvote-btn:hover[b-95fgh0b7kg] {
+    background-color: #c82333;
+}
+/* /Pages/CreatePost.razor.rz.scp.css */
+.create-post-heading[b-8f1s06i930] {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.create-post-form[b-8f1s06i930] {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.input-group[b-8f1s06i930] {
+    margin-bottom: 20px;
+}
+
+.input-field[b-8f1s06i930] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-textarea[b-8f1s06i930] {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-btn[b-8f1s06i930] {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover[b-8f1s06i930] {
+    background-color: #0056b3;
+}
+
+/* Existing message styles */
+.success-message[b-8f1s06i930] {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.error-message[b-8f1s06i930] {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+/* /Pages/PostItem.razor.rz.scp.css */
+.loading-message[b-1itur7onc4] {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.post-contents[b-1itur7onc4], .comments-section[b-1itur7onc4] {
+    background-color: #ffffff;
+    width: 80%;
+    max-width: 700px;
+    border: none;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+
+.post-title[b-1itur7onc4] {
+    font-size: 24px;
+    color: #452d3d;
+    margin-bottom: 10px;
+}
+
+.post-author[b-1itur7onc4] {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.author-name[b-1itur7onc4] {
+    font-weight: bold;
+}
+
+.post-content[b-1itur7onc4] {
+    font-size: 18px;
+}
+
+.comments-heading[b-1itur7onc4] {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.comments-table[b-1itur7onc4] {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.comment-row[b-1itur7onc4] {
+    border-bottom: 1px solid #ddd;
+}
+
+.comment-author[b-1itur7onc4], .comment-content[b-1itur7onc4], .comment-votes[b-1itur7onc4] {
+    padding: 10px;
+}
+
+.vote-btn[b-1itur7onc4] {
+    background-color: #f2f0eb;
+    color: #452d3d;
+    border: 1px solid #452d3d;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upvote-btn:hover[b-1itur7onc4] {
+    background-color: #89a57e;
+}
+
+.downvote-btn:hover[b-1itur7onc4] {
+    background-color: #d4636a;
+}
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-hweknzzehw] {
     position: relative;

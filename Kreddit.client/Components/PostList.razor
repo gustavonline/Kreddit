@@ -9,32 +9,33 @@
 
 @if (posts == null)
 {
-    <p><em>Loading...</em></p>
+    <p class="loading-text"><em>Loading...</em></p>
 }
 else
 {
-    <table>
-        <tr>
-            <th>Title</th>
-            <th>Content</th>
-            <th colspan="3">Votes</th>
-        </tr>
-        @foreach (var post in posts)
-        {
+    <table class="post-table">
+        <thead>
             <tr>
-                <!-- 
-                    These a href links will match the route in the page 'PostItem.razor'.
-                    The route is defined as "/post/{id}" and the id is the post id.
-                -->
-                <td><a href="/post/@post.Id">@post.Title</a></td>
-                <td>@post.Content</td>
-                <td>@(post.Upvotes - post.Downvotes)</td>
-                <td><button @onclick="() => Upvote(post.Id)">Upvote</button></td>
-                <td><button @onclick="() => Downvote(post.Id)">Downvote</button></td>
+                <th class="post-title-header">Title</th>
+                <th class="post-content-header">Content</th>
+                <th class="post-date-header">Created at</th>
+                <th class="post-votes-header" colspan="3">Votes</th>
             </tr>
-        }
+        </thead>
+        <tbody>
+            @foreach (var post in posts)
+            {
+                <tr class="post-row">
+                    <td class="post-title"><a class="post-link" href="/post/@post.Id">@post.Title</a></td>
+                    <td class="post-content">@post.Content</td>
+                    <td class="post-date">@post.CreatedAt</td>
+                    <td class="post-vote-count">Upvotes: @post.Upvotes - Downvotes: @post.Downvotes</td>
+                    <td class="post-upvote-btn"><button class="vote-btn upvote-btn" @onclick="() => Upvote(post.Id)">Upvote</button></td>
+                    <td class="post-downvote-btn"><button class="vote-btn downvote-btn" @onclick="() => Downvote(post.Id)">Downvote</button></td>
+                </tr>
+            }
+        </tbody>
     </table>
-
     <br/>
 }
 

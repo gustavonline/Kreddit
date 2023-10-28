@@ -1,0 +1,57 @@
+.loading-text {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #777;
+}
+
+.post-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.post-table th, .post-table td {
+    border: 1px solid #e0e0e0;
+    padding: 8px 15px;
+    text-align: left;
+}
+
+.post-table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.post-link {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.post-link:hover {
+    text-decoration: underline;
+}
+
+.vote-btn {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upvote-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.upvote-btn:hover {
+    background-color: #218838;
+}
+
+.downvote-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.downvote-btn:hover {
+    background-color: #c82333;
+}

@@ -1,0 +1,68 @@
+@page "/post/{id}"
+
+@using Kreddit.client.Services
+@using Kreddit.shared.Models
+@inject PostService PostService
+
+<PageTitle>Kreddit</PageTitle>
+
+@if (Post == null)
+{
+    <p class="loading-message"><em>Loading...</em></p>
+}
+else
+{
+    <div class="post-contents">
+        <h4 class="post-title">@Post.Title</h4>
+        <p class="post-author">Posted by <span class="author-name">@Post.User.Username</span></p>
+        <p class="post-content">@Post.Content</p>
+    </div>
+
+    <div class="comments-section">
+        <h4 class="comments-heading">Comments</h4>
+        <table class="comments-table">
+            <thead>
+            <tr>
+                <th>User</th>
+                <th>Comment</th>
+                <th colspan="3">Votes</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var comment in Post.Comments)
+            {
+                <tr class="comment-row">
+                    <td class="comment-author">@comment.User.Username</td>
+                    <td class="comment-content">@comment.Title</td>
+                    <td class="comment-votes">@(comment.Upvotes - comment.Downvotes)</td>
+                    <td><button class="vote-btn upvote-btn" @onclick="() => Upvote(comment.Id)">Upvote</button></td>
+                    <td><button class="vote-btn downvote-btn" @onclick="() => Downvote(comment.Id)">Downvote</button></td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+
+    <CreateComment PostId=@PostId></CreateComment>
+}
+
+@code {
+    [Parameter]
+    public string Id { get; set; }
+    public int PostId { get { return int.Parse(Id); } }
+    public Post Post { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Post = await PostService.GetPost(PostId);
+    }
+    private async void Upvote(int id)
+    {
+        Console.WriteLine("Not implemented 😪");
+    }
+
+    private async void Downvote(int id)
+    {
+        Console.WriteLine("Not implemented 😪");
+    }
+}

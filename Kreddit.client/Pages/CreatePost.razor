@@ -3,31 +3,71 @@
 @using Kreddit.client.Services
 
 @inject PostService PostService
-
 @inject HttpClient Http
-<h3>CreatePost</h3>
 
-<EditForm Model="_post" OnValidSubmit="HandleSubmit">
+<h3 class="create-post-heading">Create Post</h3>
+
+<EditForm Model="_post" OnValidSubmit="HandleSubmit" class="create-post-form">
     <DataAnnotationsValidator />
     <ValidationSummary />
 
-    <InputText @bind-Value="_post.Title" placeholder="Title" />
-    <br />
-    <InputTextArea @bind-Value="_post.Content" placeholder="Content" />
-    <br />
-    <InputText @bind-Value="_post.User.Username" placeholder="Username" />
-    <br />
+    <div class="input-group">
+        <InputText @bind-Value="_post.Title" placeholder="Title" class="input-field" id="post-title" />
+    </div>
+    <div class="input-group">
+        <InputTextArea @bind-Value="_post.Content" placeholder="Content" class="input-field input-textarea" id="post-content" />
+    </div>
+    <div class="input-group">
+        <InputText @bind-Value="_post.User.Username" placeholder="Username" class="input-field" id="post-username" />
+    </div>
 
-    <button type="submit">Create Post</button>
+    <button type="submit" class="submit-btn">Create Post</button>
 </EditForm>
 
-@code {
+<!-- Dynamic Message Display -->
+@if (isSuccess)
+{
+    <p class="success-message">@successMessage</p>
+}
+else if (isError)
+{
+    <p class="error-message">@errorMessage</p>
+}
 
-    private Post _post = new Post();
+@code {
     
+    private bool isSuccess = false;
+    private bool isError = false;
+    private string successMessage = "";
+    private string errorMessage = "";
+
+
+    private Post _post = new Post { User = new User() };
+
     private async Task HandleSubmit()
     {
-        var createpost= await PostService.CreatePost(_post);
-       
+        try
+        {
+            var newPost = await PostService.CreatePost(_post);
+        
+            if (newPost != null && !string.IsNullOrEmpty(newPost.Title)) 
+            {
+                isSuccess = true;
+                isError = false;
+                successMessage = "Post created successfully!";
+            }
+            else 
+            {
+                isError = true;
+                isSuccess = false;
+                errorMessage = "Failed to create post. Please try again.";
+            }
+        }
+        catch(Exception ex) 
+        {
+            isError = true;
+            isSuccess = false;
+            errorMessage = $"Error: {ex.Message}";
+        }
     }
 }

@@ -1670,3 +1670,6 @@
 /Users/gustavanderson/Downloads/Kreddit/Kreddit.client/bin/Debug/net7.0/Kreddit.shared.pdb
 /Users/gustavanderson/Downloads/Kreddit/Kreddit.client/obj/Debug/net7.0/build-gz/uIVgX4YV.gz
 /Users/gustavanderson/Downloads/Kreddit/Kreddit.client/obj/Debug/net7.0/build-gz/d8l7QXKu.gz
+/Users/gustavanderson/Downloads/Kreddit/Kreddit.client/obj/Debug/net7.0/scopedcss/Components/PostList.razor.rz.scp.css
+/Users/gustavanderson/Downloads/Kreddit/Kreddit.client/obj/Debug/net7.0/scopedcss/Pages/CreatePost.razor.rz.scp.css
+/Users/gustavanderson/Downloads/Kreddit/Kreddit.client/obj/Debug/net7.0/scopedcss/Pages/PostItem.razor.rz.scp.css

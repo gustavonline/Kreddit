@@ -18,7 +18,7 @@ public class PostController : ControllerBase
         _context = context;
     }
     
-    // GET api/allposts
+    // GET api/posts/allposts
     [HttpGet]
     public async Task<ActionResult<List<Post>>> GetAllPosts()
     {
@@ -27,7 +27,7 @@ public class PostController : ControllerBase
         return Ok(posts);
     }
     
-    // GET api/post/{id}
+    // GET api/posts/post/{id}
     [HttpGet ("{id}")]
     public async Task<ActionResult<Post>> GetPostById(int id)
     {
@@ -41,7 +41,7 @@ public class PostController : ControllerBase
         return Ok(post);
     }
     
-    // POST api/create-post
+    // POST api/posts/create-post
     [HttpPost ("create-post")]
     public async Task<ActionResult<Post>> CreatePost(Post post)
     {
@@ -54,5 +54,33 @@ public class PostController : ControllerBase
         await _context.SaveChangesAsync();
             
         return CreatedAtAction(nameof(GetPostById), new { id = post.Id }, post);
+    }
+    
+    // PUT api/posts/{id}/upvote-post
+    [HttpPut ("{id}/upvote")]
+    public async Task<ActionResult<Post>> UpvotePost(int id)
+    {
+        var post = await _context.Posts.FindAsync(id);
+        if (post == null)
+        {
+            return NotFound($"Post with ID {id} not found.");
+        }
+        post.Upvotes++;
+        await _context.SaveChangesAsync();
+        return Ok(post);
+    }
+    
+    // PUT api/posts/{id}/downvote-post
+    [HttpPut ("{id}/downvote")]
+    public async Task<ActionResult<Post>> DownvotePost(int id)
+    {
+        var post = await _context.Posts.FindAsync(id);
+        if (post == null)
+        {
+            return NotFound($"Post with ID {id} not found.");
+        }
+        post.Downvotes++;
+        await _context.SaveChangesAsync();
+        return Ok(post);
     }
 }

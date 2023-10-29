@@ -17,7 +17,7 @@ namespace Kreddit.api.Controllers
         }
         
         // GET: api/posts/{postId}/comments
-        [HttpGet("Comments")]
+        [HttpGet("comments")]
         public async Task<ActionResult<List<Comment>>> GetComments(int postId)
         {
             var post = await _context.Posts.FindAsync(postId);
@@ -37,7 +37,7 @@ namespace Kreddit.api.Controllers
 
       
         // POST: api/posts/{postId}/create-comment
-        [HttpPost("Create-comment")]
+        [HttpPost("create-comment")]
         public async Task<ActionResult<Comment>> CreateComment(int postId, Comment comment)
         {
             if (postId <= 0)

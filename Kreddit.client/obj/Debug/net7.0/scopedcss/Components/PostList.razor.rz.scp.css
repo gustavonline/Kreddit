@@ -1,0 +1,57 @@
+.loading-text[b-95fgh0b7kg] {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #777;
+}
+
+.post-table[b-95fgh0b7kg] {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.post-table th[b-95fgh0b7kg], .post-table td[b-95fgh0b7kg] {
+    border: 1px solid #e0e0e0;
+    padding: 8px 15px;
+    text-align: left;
+}
+
+.post-table th[b-95fgh0b7kg] {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.post-link[b-95fgh0b7kg] {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.post-link:hover[b-95fgh0b7kg] {
+    text-decoration: underline;
+}
+
+.vote-btn[b-95fgh0b7kg] {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upvote-btn[b-95fgh0b7kg] {
+    background-color: #28a745;
+    color: white;
+}
+
+.upvote-btn:hover[b-95fgh0b7kg] {
+    background-color: #218838;
+}
+
+.downvote-btn[b-95fgh0b7kg] {
+    background-color: #dc3545;
+    color: white;
+}
+
+.downvote-btn:hover[b-95fgh0b7kg] {
+    background-color: #c82333;
+}

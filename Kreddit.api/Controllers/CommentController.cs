@@ -1,10 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 using Kreddit.api.Data;
 using Kreddit.shared.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualBasic;
 
 namespace Kreddit.api.Controllers
 {
-    [Route("api/posts/{postId}/comments")]
+    [Route("api/posts/{postId}")]
     [ApiController]
     public class CommentController : ControllerBase
     {
@@ -15,11 +17,9 @@ namespace Kreddit.api.Controllers
             _context = context;
         }
         
-
-      
-        // POST: api/posts/{postId}/comments
-        [HttpPost]
-        public async Task<ActionResult<Comment>> CreateComment(int postId, Comment comment)
+        // GET: api/posts/{postId}/comments
+        [HttpGet("Comments") ]
+        public async Task<ActionResult<List<Comment>>> GetComments(int postId)
         {
             var post = await _context.Posts.FindAsync(postId);
             if (post == null)
@@ -27,12 +27,35 @@ namespace Kreddit.api.Controllers
                 return NotFound($"Post with ID {postId} not found.");
             }
 
-            if (string.IsNullOrWhiteSpace(comment.Title)) 
+            var comments = await _context.Comments.Where(c => c.PostId == postId).ToListAsync();
+            return Ok(comments);
+        }
+        
+
+      
+        // POST: api/posts/{postId}/create-comment
+        [HttpPost("Create-comment")]
+        public async Task<ActionResult<Comment>> CreateComment(int postId, Comment comment)
+        {
+            if (postId <= 0)
+            {
+                return BadRequest("Invalid PostId.");
+            }
+
+            var post = await _context.Posts.FindAsync(postId);
+            if (post == null)
+            {
+                return NotFound($"Post with ID {postId} not found.");
+            }
+
+            if (string.IsNullOrWhiteSpace(comment.Title))
             {
                 return BadRequest("Comment title should not be empty or whitespace.");
             }
 
+            // Set the PostId in the Comment object.
             comment.PostId = postId;
+
             _context.Comments.Add(comment);
             await _context.SaveChangesAsync();
 

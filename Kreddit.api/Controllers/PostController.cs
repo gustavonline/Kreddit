@@ -18,7 +18,7 @@ public class PostController : ControllerBase
         _context = context;
     }
     
-    // GET api/posts/allposts
+    // GET api/posts
     [HttpGet]
     public async Task<ActionResult<List<Post>>> GetAllPosts()
     {
@@ -27,7 +27,7 @@ public class PostController : ControllerBase
         return Ok(posts);
     }
     
-    // GET api/posts/post/{id}
+    // GET api/posts/{id}
     [HttpGet ("{id}")]
     public async Task<ActionResult<Post>> GetPostById(int id)
     {

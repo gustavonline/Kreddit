@@ -200,18 +200,18 @@
       "mscorlib.dll": "sha256-Xo3wdLenBZ41X73hGjkWTbEQZDKcQsnPFtlkePUxLY0=",
       "netstandard.dll": "sha256-qjqaAEP3hdLnU\/TnoCd8HaSa+0ruV1TpdaB2GUujGMw=",
       "System.Private.CoreLib.dll": "sha256-\/7uQ+eNo9u3H1mpgMko4D3tKZHeGRfsRjna0Dqsu62k=",
-      "Kreddit.shared.dll": "sha256-8Yt+UeyTECfZeJ+bY1CU4M5vkHtUPUyIFq3OsOBCPqI=",
-      "Kreddit.client.dll": "sha256-Qv\/cLRJRLesjxHCTuaNJWtnQ7jMCi2S34t+z4ZCY6PQ="
+      "Kreddit.shared.dll": "sha256-eGK2T8eQaSCSm0L3voowq11Ht9DiYOiMZ0R9vlRWXfo=",
+      "Kreddit.client.dll": "sha256-xtEx9BpEx1CJimkyDseIH9LK2ztdAispsruyvaNF\/6g="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Kreddit.shared.pdb": "sha256-ACONFUmEU8iCwhHuhQjT\/7FEO2q7nfmaVDdaj8\/kbGs=",
-      "Kreddit.client.pdb": "sha256-22f5bNYFFnQm3PcbZbFI6JrXqN4SV9DGDredxA3CElA="
+      "Kreddit.shared.pdb": "sha256-2JXhY6VgajX4pGPMlqiZS0NmoSevXN2D1fCAovizbgU=",
+      "Kreddit.client.pdb": "sha256-EHSY\/qDxuQv5uCDMGUUYA4B4xd8AvfXIOd9b6817QNo="
     },
     "runtime": {
-      "dotnet.7.0.10.fnbfwhnwzc.js": "sha256-qJB30QURoyH3y3WyayHu6nMFIx2XNOkXCez7tagGpvE=",
+      "dotnet.7.0.10.fko36mawz4.js": "sha256-qJB30QURoyH3y3WyayHu6nMFIx2XNOkXCez7tagGpvE=",
       "dotnet.timezones.blat": "sha256-pf9chcB37Cf13KuuvScsozomnAUanMeCfvDr9Wqofh8=",
       "dotnet.wasm": "sha256-gdnUvePnfbvTJDGtaK1+TnCtuTiC5NZjlYZ9kgEpMO0=",
       "icudt.dat": "sha256-tO5O5YzMTVSaKBboxAqezOQL9ewmupzV2JrB5Rkc8a4=",

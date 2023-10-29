@@ -1,0 +1,75 @@
+@using Kreddit.shared.Models
+@using Kreddit.client.Services
+@inherits LayoutComponentBase
+@inject CommentService CommentService
+
+
+<h3>CreateComment</h3>
+
+<EditForm Model="_comment">
+    <DataAnnotationsValidator />
+
+    <div class="form-group">
+        <label for="content">Comment Content:</label>
+        <textarea id="content" @bind="_comment.Title" class="form-control"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="username">Username:</label>
+        <input id="username" @bind="_comment.User.Username" class="form-control" />
+    </div>
+
+    <button @onclick="SubmitComment" class="btn btn-primary">Submit Comment</button>
+
+    @if (isSuccess)
+    {
+        <div class="alert alert-success mt-3">@successMessage</div>
+    }
+
+    @if (isError)
+    {
+        <div class="alert alert-danger mt-3">@errorMessage</div>
+    }
+</EditForm>
+
+@code {
+    [Parameter]
+    public int PostId { get; set; }
+
+    private Comment _comment = new Comment { User = new User() };
+
+    private bool isSuccess = false;
+    private bool isError = false;
+    private string successMessage = string.Empty;
+    private string errorMessage = string.Empty;
+    
+    
+
+    // Submit comment
+    private async Task SubmitComment()
+    {
+        try
+        {
+            var newComment = await CommentService.CreateComment(PostId, _comment);
+        
+            if (newComment != null && !string.IsNullOrEmpty(newComment.Title)) 
+            {
+                isSuccess = true;
+                isError = false;
+                successMessage = "Comment created successfully!";
+            }
+            else 
+            {
+                isError = true;
+                isSuccess = false;
+                errorMessage = "Failed to create comment. Please try again.";
+            }
+        }
+        catch(Exception ex) 
+        {
+            isError = true;
+            isSuccess = false;
+            errorMessage = $"Error: {ex.Message}";
+        }
+    }
+}

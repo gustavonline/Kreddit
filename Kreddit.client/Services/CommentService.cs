@@ -25,7 +25,7 @@ public class CommentService
     
     public async Task<Comment> CreateComment(int postId,Comment comment)
     {
-        string url = $"{baseAPI}posts/{postId}/comments";
+        string url = $"{baseAPI}posts/{postId}/create-comment/";
      
         // Post JSON to API, save the HttpResponseMessage
         HttpResponseMessage msg = await http.PostAsJsonAsync(url, new { comment });

@@ -3,6 +3,7 @@
 @using Kreddit.client.Services
 @using Kreddit.shared.Models
 @inject PostService PostService
+@inject CommentService CommentService
 @using Kreddit.client.Components
 
 <PageTitle>Kreddit</PageTitle>
@@ -30,7 +31,7 @@ else
             </tr>
             </thead>
             <tbody>
-            @foreach (var comment in Post.Comments)
+            @foreach (var comment in Comments)
             {
                 <tr class="comment-row">
                     <td class="comment-author">@comment.User.Username</td>
@@ -52,10 +53,12 @@ else
     public string Id { get; set; }
     public int PostId { get { return int.Parse(Id); } }
     public Post Post { get; set; }
+    private Comment[]? Comments;
 
     protected override async Task OnInitializedAsync()
     {
         Post = await PostService.GetPost(PostId);
+        Comments = await CommentService.GetComments(PostId);
     }
     private async void Upvote(int id)
     {

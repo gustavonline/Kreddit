@@ -17,7 +17,7 @@ public class Comment
     
     public DateOnly Date { get; set; }
     
-    public Comment(string content = "", int upvotes = 0, int downvotes = 0, User user = null)
+    public Comment(User user, string content = "", int upvotes = 0, int downvotes = 0)
     {
         Title = Title;
         Upvotes = upvotes;

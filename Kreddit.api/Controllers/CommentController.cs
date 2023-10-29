@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Mvc;
 using Kreddit.api.Data;
 using Kreddit.shared.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.VisualBasic;
 
 namespace Kreddit.api.Controllers
 {
@@ -18,7 +17,7 @@ namespace Kreddit.api.Controllers
         }
         
         // GET: api/posts/{postId}/comments
-        [HttpGet("Comments") ]
+        [HttpGet("Comments")]
         public async Task<ActionResult<List<Comment>>> GetComments(int postId)
         {
             var post = await _context.Posts.FindAsync(postId);
@@ -27,7 +26,11 @@ namespace Kreddit.api.Controllers
                 return NotFound($"Post with ID {postId} not found.");
             }
 
-            var comments = await _context.Comments.Where(c => c.PostId == postId).ToListAsync();
+            var comments = await _context.Comments
+                .Where(c => c.PostId == postId)
+                .Include(c => c.User) // Include the user for each comment
+                .ToListAsync();
+
             return Ok(comments);
         }
         

@@ -15,7 +15,7 @@ public class Comment
     public int Downvotes { get; set; }
     
     
-    public DateOnly Date { get; set; }
+    public DateOnly Date { get; set; } = DateOnly.FromDateTime(DateTime.Now);
     
     public Comment(User user, string content = "", int upvotes = 0, int downvotes = 0)
     {

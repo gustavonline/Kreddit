@@ -17,6 +17,7 @@ else
     <div class="post-contents">
         <h4 class="post-title">@Post.Title</h4>
         <p class="post-author">Posted by <span class="author-name">@Post.User.Username</span></p>
+        <p class="post-created-at">Created at @Post.CreatedAt</p>
         <p class="post-content">@Post.Content</p>
     </div>
 
@@ -27,6 +28,7 @@ else
             <tr>
                 <th>User</th>
                 <th>Comment</th>
+                <th>Create At</th>
                 <th colspan="3">Votes</th>
             </tr>
             </thead>
@@ -36,6 +38,7 @@ else
                 <tr class="comment-row">
                     <td class="comment-author">@comment.User.Username</td>
                     <td class="comment-content">@comment.Title</td>
+                    <td class="comment-created-at">@comment.Date</td>
                     <td class="comment-votes">@(comment.Upvotes - comment.Downvotes)</td>
                     <td><button class="vote-btn upvote-btn" @onclick="() => Upvote(comment.Id)">Upvote</button></td>
                     <td><button class="vote-btn downvote-btn" @onclick="() => Downvote(comment.Id)">Downvote</button></td>
